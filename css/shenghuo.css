@@ -1,0 +1,93 @@
+#header{
+	background: #007AFF;
+}
+#header>h1{
+	color: #FFFFFF;
+}
+#shenga{
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+#shenga>div{
+	font-size: 10px;
+}
+#bg{
+	background: #FFFFFF;
+}
+#bg>li{
+	border: 0px;
+}
+.pa{
+	padding-bottom:3rem;
+}
+.bannerr{
+	margin-top: 0.5rem;
+}
+#to{
+	margin-top: 0.5rem;
+}
+#to a{
+	font-size: 12px;
+}
+#con{
+	background: #FFFFFF;
+}
+#con>div>div{
+	padding-bottom: 1rem;
+	margin-top: 1rem;
+}
+
+#con>div>div>span{
+	display: block;
+	text-align: center;
+	font-size: 12px;
+	margin-top: 1rem;
+}
+#con>div>div>p{
+	text-align: center;
+	font-size: 10px;
+}
+#con>div>div>img{
+	display: block;
+	margin: auto;
+}
+#con>div>div>div>span{
+	display: inline-block;
+	padding-left: 0.5rem;
+	font-size: 12px;
+	margin-top: 1rem;
+	width: 50%;
+}
+#con>div>div>div>p{
+		display: inline-block;
+		padding-left: 0.5rem;
+		font-size: 10px;
+		width: 50%;
+		position: relative;
+		top: -2rem;
+}
+#con>div>div>div>img{
+	display: inline-block;
+	width: 30%;
+	position: relative;
+	top: -1.5rem;
+}
+#con>div>div>div{
+ height: 80px;
+}
+
+#bg>li>a>img{
+	display: block;
+	width: 60%;
+	margin: auto;
+}
+#con>div>div>img{
+	display: block;
+	width: 60%;
+	margin: auto;
+}
+#imgmm{
+	display: block;
+	width: 100%;
+	height: 100px;
+}

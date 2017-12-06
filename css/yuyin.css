@@ -1,0 +1,53 @@
+#yin>label{
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+#yin>input{
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	padding-right: 0px;
+	border: 1px solid #007AFF;
+}
+#yin>p{
+	width: 100%;
+	text-align: center;
+	margin-top: 2rem;
+}
+.mui-icon-mic-filled:before, .mui-icon-speech:before{
+	width: 100%;
+	display: block;
+	background: #007AFF;
+	padding: 2rem 2.3rem;
+	padding-left: 2.3rem;
+	padding-right: 2.7rem;
+	position: relative;
+	top: 14rem;
+	right:12.5rem;
+	font-size: 50px;
+	text-align: center;
+	border-radius: 50%;
+	color: white;
+	text-align: center;
+}
+#yin{
+	background: white;
+	padding-bottom: 23.5rem;
+}
+.mui-input-row label~input, .mui-input-row label~select, .mui-input-row label~textarea{
+	float: none;
+}
+#header{
+	background: #007AFF;
+}
+#header>a{
+	color: white;
+}
+#header>h1{
+	color: white;
+}

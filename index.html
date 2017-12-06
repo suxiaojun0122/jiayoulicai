@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/index.css">
+
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">首页</h1>
+		</header>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" href="home.html">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" href="licai.html">
+				<span class="mui-icon mui-icon-phone"></span>
+				<span class="mui-tab-label">理财</span>
+			</a>
+			<a class="mui-tab-item" href="shenghuo.html" id="sheng">
+				<span class="mui-icon mui-icon-email"></span>
+				<span class="mui-tab-label">生活</span>
+			</a>
+			<a class="mui-tab-item" href="zixun.html">
+				<span class="mui-icon mui-icon-gear"></span>
+				<span class="mui-tab-label">资讯</span>
+			</a>
+			<a class="mui-tab-item" href="my.html">
+				<span class="mui-icon mui-icon-gear"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>
+		</nav>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+			mui.plusReady(function() {
+				var page = [
+					'home.html',
+					'licai.html',
+					'shenghuo.html',
+					'zixun.html',
+					'my.html',
+				];
+				var styles = {
+					top: "0px",
+					bottom: "50px"
+				};
+				var sub = plus.webview.currentWebview();
+				for(var i = 0; i < page.length; i++) {
+					var item = plus.webview.create(page[i], page[i], styles)
+					item.hide();
+					sub.append(item);
+				}
+				plus.webview.show(page[0]);
+				mui('.mui-bar-tab').on("tap", "a", function() {
+					var href = this.getAttribute("href");
+					plus.webview.show(href);
+				})
+				mui("#sheng")[0].addEventListener('tap',function(){
+					this.style.background="red";
+					this.style.borderRadius="50%";
+					this.style.color="#ffffff"
+					mui.openWindow({
+						url:"yuyin.html",
+   						 id:"yuyin.html",
+					})
+				})
+			})
+		</script>
+	</body>
+
+</html>

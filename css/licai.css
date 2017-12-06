@@ -1,0 +1,191 @@
+#header{
+	background: #007AFF;
+}
+#header>h1{
+	color: #FFFFFF;
+}
+#header>a{
+	color: #FFFFFF;
+	line-height: 44px;
+	font-size: 14px;
+}
+#banner{
+	background: url(../img/banner.jpg) no-repeat center;
+	background-size: 100% 100%;
+
+}
+#banner>span{
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	padding-top: 1.5rem;
+	padding-bottom: 0.5rem;
+}
+#banner>p{
+	text-align: center;
+	color: #000000;
+	font-size: 14px;
+}
+#banner>button{
+	display: block;
+	margin: auto;
+	margin-bottom: 1rem;
+	padding: 0.3rem 1.5rem;
+}
+#jiu{
+	background: #FFFFFF;
+	margin-bottom: 0.5rem;
+}
+#jiu>li>a>div{
+	font-size: 14px;
+}
+#jiu>li{
+	padding:0.2rem;
+}
+
+#jin{
+	background: #FFFFFF;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+#jin>div>div{
+	text-align: center;
+	font-size: 14px;
+	padding-top: 1rem;
+}
+#jin>div>a{
+	display: block;
+	text-align: center;
+	font-size: 22px;
+	color: orangered;
+	padding-top: 0.6rem;
+}
+#jin>div>p{
+	text-align: center;
+	font-size: 11px;
+	padding-top: 0.2rem;
+}
+#jin>div>span{
+	display: block;
+	text-align: center;
+	font-size: 12px;
+	margin-bottom: 1rem;
+}
+#jin>div:first-of-type{
+	border-right: 0.05rem solid #EEEEEE;
+}
+#ji>li>a{
+	font-size: 14px;
+}
+#ji>li>a>span{
+	float: right;
+	padding-right: 1.3rem;
+	font-size: 14px;
+	color: #6D6D72;
+}
+
+#jing{
+	margin-bottom: 0.5rem;
+}
+#jing>li>a,#jing>li>span,#jing>li>p,#jing>li>div{
+	display: inline-block;
+	width: 50%;
+}
+#jing>li>a{
+	color: orangered;
+	font-size: 22px;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	top: 0.3rem;
+	left: 0px;
+}
+#jing>li>span{
+	font-size: 14px;
+	margin-top: 0px;/
+
+}
+#jing>li>p{
+	font-size: 12px;
+}
+#jing>li>div>button{
+	padding: 0.1rem 0.5rem;
+	border-radius: 2rem;
+	margin-right: 0.2rem;
+	font-size: 12px;
+	margin-top: 0.3rem;
+}
+#jing>li>div{
+	font-size: 10px;
+	line-height: 2.2rem;
+	color: #555555;
+	width: 48%;
+}
+
+
+#nine{
+	background: #FFFFFF;
+	border: 0px;
+}
+#nine>li{
+	border: 0px;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+#nine>li>a{
+	padding-top: 0px;
+	margin-top: 0px;
+}
+#nine>li>a>div{
+	margin-bottom: 0.3rem;
+	color: lightskyblue;
+	font-size: 12px;
+}
+#nine>li>a>p{
+	font-size: 10px;
+
+	margin-bottom: 0.2rem;
+}
+.img{
+	width: 50%;
+	display: block;
+	margin: auto;
+	margin-bottom: 0.3rem;
+	margin-top: 1rem;
+}
+
+
+#xin{
+	width: 100%;
+	display: block;
+}
+#xintop{
+	border: 0px;
+	padding: 0px;
+}
+#xintop>a{
+	padding: 0px;
+	margin: 0px;
+}
+.mui-table-view-cell:after{
+	height: 0px;
+}
+#libao{
+	background: #FFFFFF;
+	border: 0px;
+}
+#end>div>p{
+	text-align: center;
+	font-size: 12px;
+	padding:0.7rem 0rem;
+}
+#pic{
+	width: 50%;
+	display: block;
+	margin: auto;
+}
+#imgli{
+	display: block;
+	height: 100px;
+}

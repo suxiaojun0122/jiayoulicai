@@ -1,0 +1,43 @@
+{
+	"index.html": {
+		"resources": [
+			"home.html",
+			"fonts/mui.ttf"
+		],
+		"refer": [
+			"licai.html",
+			"home.html",
+			"my.html",
+			"shenghuo.html",
+			"zixun.html",
+			"yuyin.html"
+		]
+	},
+	"home.html": {
+		"refer": [
+			"login.html"
+		]
+	},
+	"login.html": {
+		"refer": [
+			"main.html",
+			"reg.html",
+			"forget_password.html"
+		]
+	},
+	"licai.html": {
+		"refer": [
+			"login.html"
+		]
+	},
+	"reg.html": {
+		"refer": [
+			"login.html"
+		]
+	},
+	"my.html": {
+		"refer": [
+			"login.html"
+		]
+	}
+}

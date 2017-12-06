@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/home.css" />
+	</head>
+
+	<body>
+		<header id="header">
+			<img src="img/bn.jpg" alt="" />
+			<span>理财 贷款 保险 众筹</span>
+			<p>一站搞定 · 涨赚不停</p>
+			<button type="button" data-loading-icon="mui-spinner mui-spinner-custom" class="mui-btn mui-btn-primary" id="dl">登陆/注册</button>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view " id="libao">
+				<li class="mui-table-view-cell mui-media" id="xintop">
+					<a href="javascript:;">
+						<img src="img/xin.jpg" alt="" id="xin">
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view " id="libaoone">
+				<li class="mui-table-view-cell mui-media" id="li">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-right" src="img/baozhang.jpg">
+						<div class="mui-media-body" id="span">
+							新人理财
+							<p class="mui-ellipsis" id="p">送20元现金券</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media" id="li">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-right" src="img/xinren.jpg">
+						<div class="mui-media-body" id="span">
+							账户安全保障
+							<p class="mui-ellipsis" id="p">1.99元专享</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view" id="ulp">
+				<li class="mui-table-view-cell">
+					<a href="#" id="aaa">
+						活动专区
+					</a>
+				</li>
+			</ul>
+
+			<div class="mui-row" id="roww">
+				<div class="mui-col-xs-4 mui-col-sm-4">
+					<img src="img/huiyuan.jpg" alt="">
+				</div>
+				<div class="mui-col-xs-4 mui-col-sm-4">
+					<img src="img/saoma.jpg" alt="">
+				</div>
+				<div class="mui-col-xs-4 mui-col-sm-4">
+					<img src="img/motianlun.jpg" alt="">
+				</div>
+			</div>
+			<ul class="mui-table-view" id="ulpp">
+				<li class="mui-table-view-cell">
+					<a href="#" id="aaa">
+						资讯
+					</a>
+				</li>
+			</ul>
+
+			<div class="mui-row" id="rowzixun">
+				<div class="mui-col-xs-12 mui-col-sm-12">
+					<span>重磅！全球供给收缩能支撑多高的油价？ </span>
+				</div>
+				<div class="mui-col-xs-12 mui-col-sm-12">
+					<span>重磅发布！中国的"养老目标"基金来了 谁来运作 </span>
+				</div>
+				<div class="mui-col-xs-12 mui-col-sm-12">
+					<span>支付江湖大战再起，数十万亿支付市场谁才是最后...</span>
+				</div>
+			</div>
+
+			<ul class="mui-table-view " id="libao">
+				<li class="mui-table-view-cell mui-media" id="xintop">
+					<a href="javascript:;">
+						<img src="img/fankui.jpg" alt="" id="xin">
+					</a>
+				</li>
+			</ul>
+
+			<ul class="mui-table-view mui-grid-view mui-grid-9" id="nine">
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+					<a href="#">
+						<img src="img/tbthree.jpg" alt="" class="img" >
+						<div class="mui-media-body">苏宁旗下</div>
+						<p>苏宁控股品牌<br />中国金融020先行者 </p>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+					<a href="#">
+						<img src="img/tbtwo.jpg" alt="" class="img" >
+						<div class="mui-media-body">安全保障</div>
+						<p>中国人寿财保承保<br />银行级账户安全 </p>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+					<a href="#">
+						<img src="img/tbone.jpg" alt="" class="img" >
+						<div class="mui-media-body">优质产品</div>
+						<p>集理财，贷款，保险，<br />众筹等于一体 </p>
+					</a>
+				</li>
+			</ul>
+
+			<div class="mui-row" id="end">
+				<div class="mui-col-xs-12 mui-col-sm-12">
+					<span>苏宁金融出品</span>
+					<p>24小时客服热线<a href="#">95177</a></p>
+				</div>
+			</div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			//点击登陆按钮的效果
+			mui(document.body).on('tap', '.mui-btn', function(e) {
+				mui(this).button('loading');
+				setTimeout(function() {
+					mui(this).button('reset');
+				}.bind(this), 2000);
+			});
+			mui.plusReady(function(){
+				//拨打咨询电话
+				mui("#end")[0].addEventListener('tap',function(){
+					plus.device.dial(95177, false );
+				})
+				//跳转到登陆页面
+				mui("#dl")[0].addEventListener('tap',function(){
+					mui.openWindow({
+						url:"login.html",
+   						 id:"login.html",
+					})
+				})
+			})	
+		</script>
+	</body>
+
+</html>

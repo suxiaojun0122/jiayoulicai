@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/my.css">
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" id="header">
+			<a class="mui-icon mui-icon-gear mui-pull-right"></a>
+			<h1 class="mui-title">我的</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view" id="lu">
+				<li class="mui-table-view-cell mui-media">
+					<a class="mui-icon mui-icon-forward mui-pull-right"></a>
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30" id="pop">
+						<div class="mui-media-body">
+							立即登录
+							<p class="mui-ellipsis">开启财富生活</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+
+			<div class="mui-row" id="ka">
+				<div class="mui-col-sm-3 mui-col-xs-3">
+					<img src="img/my (3).jpg"><span>银行卡</span>
+				</div>
+				<div class="mui-col-sm-3 mui-col-xs-3">
+					<img src="img/my (4).jpg"><span>电子券</span>
+				</div>
+				<div class="mui-col-sm-3 mui-col-xs-3">
+					<img src="img/my (1).jpg"><span>积分</span>
+				</div>
+				<div class="mui-col-sm-3 mui-col-xs-3">
+					<img src="img/my (2).jpg"><span>账单</span>
+				</div>
+			</div>
+
+			<ul class="mui-table-view" id="lu">
+				<li class="mui-table-view-cell mui-media">
+					<a class="mui-icon mui-icon-forward mui-pull-right"></a>
+					<a href="javascript:;">
+						<div class="mui-media-body" id="liji">
+							总资产<span>~ ~ ~ ~</span>
+							<p class="mui-ellipsis">昨日收益<span>- - - -</span></p>
+						</div>
+					</a>
+				</li>
+			</ul>
+
+			<ul class="mui-table-view" id="marg">
+				<li class="mui-table-view-cell">
+					<img src="img/sxj (24).jpg" alt="">
+					<a href="#"> 易付宝余额</a>
+					<a href="#">点滴耕耘</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<img src="img/t (5).jpg" alt="">
+					<a href="#"> 零钱宝</a>
+					<a href="#">多场景 很灵活</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<img src="img/t (6).jpg" alt="">
+					<a href="#"> 定期理财</a>
+					<a href="#">高收益 更安心</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<img src="img/t (8).jpg" alt="">
+					<a href="#"> 基金</a>
+					<a href="#">费率低 种类多</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<img src="img/t (3).jpg" alt="">
+					<a href="#"> 黄金</a>
+					<a href="#">低门槛 更便捷</a>
+				</li>
+			</ul>
+			
+			<ul class="mui-table-view" id="marg">
+				<li class="mui-table-view-cell">
+					<img src="img/sxj (33).jpg" alt="">
+					<a href="#"> 任性付</a>
+					<a href="#">惠分期购无忧</a>
+				</li>
+			</ul>
+			
+			<ul class="mui-table-view" id="marg">
+				<li class="mui-table-view-cell">
+					<img src="img/sxj (32).jpg" alt="">
+					<a href="#">众筹</a>
+					<a href="#">助力创新 玩赚梦想</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<img src="img/sxj (35).jpg" alt="">
+					<a href="#"> 保险</a>
+					<a href="#">从未如此安心</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<img src="img/sxj (13).jpg" alt="">
+					<a href="#"> 苏宁卡</a>
+					<a href="#">苏宁卡 用心表达</a>
+				</li>
+			</ul>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui.plusReady(function(){
+				//跳转到登陆页面
+				mui("#lu")[0].addEventListener('tap',function(){
+					mui.openWindow({
+						url:"login.html",
+   						 id:"login.html",
+					})
+				})
+			})	
+		</script>
+	</body>
+
+</html>

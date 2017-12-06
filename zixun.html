@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/zixun.css">
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" id="header">
+			<h1 class="mui-title">资讯</h1>
+		</header>
+		<div class="mui-content" id="refreshContainer">
+			<div id="slider" class="mui-slider">
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="img/hah .jpg">
+						</a>
+					</div>
+					<!-- 第一张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="img/hah .jpg">
+						</a>
+					</div>
+					<!-- 第二张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="img/hah .jpg">
+						</a>
+					</div>
+					<!-- 第三张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="img/hah .jpg">
+						</a>
+					</div>
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="img/hah .jpg">
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-indicator" id="dian">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+				</div>
+			</div>
+
+			<div class="mui-row" id="zii">
+				<div class="mui-col-sm-3 mui-col-xs-3">
+					<img src="img/zi (4).jpg" alt="">
+				</div>
+				<div class="mui-col-sm-3 mui-col-xs-3">
+					<img src="img/zi (1).jpg" alt="">
+				</div>
+				<div class="mui-col-sm-3 mui-col-xs-3">
+					<img src="img/zi (2).jpg" alt="">
+				</div>
+				<div class="mui-col-sm-3 mui-col-xs-3">
+					<img src="img/zi (3).jpg" alt="">
+				</div>
+			</div>
+
+			<ul class="mui-table-view" id="to">
+				<li class="mui-table-view-cell">
+					<a href="#">
+						每日推介
+					</a>
+				</li>
+			</ul>
+
+			<ul class="mui-table-view" id="huo">
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-right" src="img/banga (5).jpg">
+						<div class="mui-media-body">
+							<img src="img/huo.jpg" alt=""><img src="img/bang.jpg" alt=""> 日本制造走上"作死"之路，给中国制造业哪些警示？
+							<p class="mui-ellipsis">22小时前 中国新闻网</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+
+			<div class="mui-card-header mui-card-media" id="immg">
+				<img src="img/banga (6).jpg" alt="" />
+				<div class="mui-media-body">
+					巴菲特：学历和收入没半毛钱关系？！
+					<p>21小时前</p>
+				</div>
+			</div>
+
+			<ul class="mui-table-view" id="huo">
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-right" src="img/banga (7).jpg">
+						<div class="mui-media-body">
+							除了马云王健林 哪些大佬也是被 转钱耽误的灵魂歌手？
+							<p class="mui-ellipsis">22小时前 中国新闻网</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-right" src="img/banga (1).jpg">
+						<div class="mui-media-body">
+							选择一线城市，还是回老家，如何决策？
+							<p class="mui-ellipsis">22小时前 菜鸟理财</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-right" src="img/banga (2).jpg">
+						<div class="mui-media-body">
+							你的财富状况是否良好？从这几方面就能看出
+							<p class="mui-ellipsis">22小时前 和讯网</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-right" src="img/banga (3).jpg">
+						<div class="mui-media-body">
+							买房选市区老破小还是郊区高大上？五个理由告诉你
+							<p class="mui-ellipsis">23小时前 融360</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-right" src="img/banga(4).jpg">
+						<div class="mui-media-body">
+							除了薪资，职场上还有这些事值得关注！
+							<p class="mui-ellipsis">22小时前 嘉丰德瑞</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			var html = "";
+			function refreshUp() {
+				setTimeout(function() {
+					for(var i = 0; i <3; i++) {
+						var lis = document.createElement("li");
+						lis.className = 'mui-table-view-cell mui-media';
+						lis.innerHTML = `
+									<li  class='mui-table-view-cell mui-media' id='hot'>			
+										<a  href='javascript:;'>
+											<img  class='mui-media-object mui-pull-right'   src='img/banga(4).jpg'>
+											<div class='mui-media-body'>
+													除了薪资，职场上还有这些事值得关注！
+												<p  class='mui-ellipsis'>
+													22小时前 嘉丰德瑞
+												</p>
+											</div>
+										</a>
+									</li>
+							`;
+						mui(".mui-table-view")[2].appendChild(lis);
+					}
+					//停止刷新
+					mui('#refreshContainer').pullRefresh().endPullupToRefresh();
+				}, 2000)
+			}
+			mui.init({			
+				pullRefresh: {
+					container: "#refreshContainer", //待刷新区域标识，querySelector能定位的css选择器均可，比如：id、.class等		
+					up: {
+						height: 0, //可选.默认50.触发上拉加载拖动距离
+						auto: true, //可选,默认false.自动上拉加载一次
+						contentrefresh: "正在加载...", //可选，正在加载状态时，上拉加载控件上显示的标题内容
+						contentnomore: '没有更多数据了', //可选，请求完毕若没有更多数据时显示的提醒内容；
+						callback: refreshUp,
+						//必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+					}
+				}
+			});
+			//轮播图自动轮播
+			var gallery = mui('#slider');
+			gallery.slider({
+				interval: 2000 //自动轮播周期，若为0则不自动播放，默认为0；
+			});
+		</script>
+	</body>
+
+</html>
